@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  // Avoid wrong tracing root when another lockfile exists (e.g. documentation/).
+  outputFileTracingRoot: path.join(__dirname),
   images: {
     remotePatterns: [
       {

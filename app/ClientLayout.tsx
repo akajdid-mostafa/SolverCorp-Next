@@ -3,7 +3,7 @@
 import { ReactNode, useLayoutEffect, useState } from "react";
 import { ThemeProvider } from "@/src/context/ThemeProvider";
 import { LenisContext } from "@/src/context/LenisContext";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 export default function ClientLayout({ children }: { children: ReactNode }) {
   const [lenis, setLenis] = useState<Lenis | null>(null);
