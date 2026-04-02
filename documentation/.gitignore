@@ -1,5 +1,7 @@
 # Dependencies
 /node_modules
+# Keep a single lockfile at the Next app root; npm here would recreate this file.
+package-lock.json
 
 # Production
 /build
